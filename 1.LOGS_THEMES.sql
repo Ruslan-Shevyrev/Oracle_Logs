@@ -35,3 +35,9 @@ COMMENT ON COLUMN LOGS_THEMES.CLEAR_TIME_TYPE IS '1-хранить логи в �
 COMMENT ON COLUMN LOGS_THEMES.DAYS_CNT IS 'Сколько хранить логи в днях';
 COMMENT ON COLUMN LOGS_THEMES.MONTHS_CNT IS 'Сколько хранить логи в месяцах';
 COMMENT ON COLUMN LOGS_THEMES.DESCR IS 'Описание';
+
+INSERT INTO LOGS_THEMES(THEME_NAME, ACTIVE, CLEAR_TIME_TYPE, DAYS_CNT, DESCR)
+VALUES('DEBUG', 'Y' , 1, 1, 'Основная тема для DEBUG');
+
+INSERT INTO LOGS_THEMES(THEME_NAME, ACTIVE, CLEAR_TIME_TYPE, DAYS_CNT, DESCR)
+VALUES('EXAMPLE', 'Y' , 1, 1, 'Тестовая тема');
